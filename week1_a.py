@@ -13,6 +13,13 @@ def convert_to_bits(n, pad):
         result = [0] + result
     return result
 
+def string_to_bits(s):
+    result = []
+    for c in x:
+        result = result + convert_to_bits(ord(c), 7)
+    return result
+    
+
 print convert_to_bits(16384, 16)
 
 
